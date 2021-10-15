@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#start{
+    display: flex;
+    background-image: url("backgroundimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#title{
+    margin: 40px 0 0 40px;
+}
+
+#start h1{
+    font-size: 3rem;
+    color: #d4d4d4;
+    font-family: roboto;
+    border-bottom: 8px solid #d4d4d4;
+    max-width: 545px;
+}
+
+#start h2{
+    font-size: 1.5rem;
+    font-family: roboto;
+    color: #d4d4d4;
+}
+
+#biography{
+    display: flex;
+    min-height: 100vh;
+    background-color: #A5A58D;
+}
+#biography-container{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#biography h1{
+    font-size: 3.5rem;
+    font-family: roboto;
+    color: #3F4238;
+    border-bottom: 8px solid #3F4238;
+    width: 260px;
+    margin-right: 140px;
+}
+
+#biography p{
+    margin-top: 15px;
+    font-family: roboto;
+    color: #3F4238;
+    font-size: 1.45rem;
+    width: 400px;
+}
+
+#img-div{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#image{
+    max-width: 380px;
+    height: auto;
+    border: 8px solid #3F4238;
+}
+
+#img-caption{
+    color: #3F4238;
+    font-family: roboto;
+    font-size: 1rem;
+}
+
+
+
+#ceremony{
+    min-height: 100vh;
+    background-color: #B7B7A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ceremony div{
+    text-align: center;
+}
+
+iframe{
+    width: 800px;
+    height: 500px;
+    border: 8px solid #3F4238;
+}
+
+#tribute-link{
+    font-family: roboto;
+    font-size: 1rem;
+    color: #3F4238;
+}
+
+#tribute-link:hover{
+    font-size: 1.02rem;
+}
+
+#tribute-link:link, #tribute-link:visited{
+    text-decoration: none;
+    color: #3F4238;
+}    
+
+#tribute-info{
+    margin-top: 80px;
+}    
+
+@media (max-width: 800px){
+    #start h1{
+        font-size: 1.5rem;
+        text-decoration: underline solid #d4d4d4;
+        border-bottom: none;
+    }
+    
+    #start h2{
+        font-size: 0.7rem;
+    }
+    
+
+
+    #biography{
+        flex-direction: column;
+    }    
+    
+    #biography-container{
+        width: 100%;
+    }    
+    
+    #biography h1{
+        font-size: 2rem;
+        text-decoration: underline solid #3F4238;
+        border-bottom: none;
+        margin-right: 60px;
+    }    
+
+    #biography p{
+        font-size: 1rem;
+        max-width: 320px;
+    }    
+
+    #img-div{
+        width: 100%;
+    }
+
+     #image{
+        max-width: 320px;
+    }
+    
+
+
+    iframe{
+        width: 100%;
+    }
+}
